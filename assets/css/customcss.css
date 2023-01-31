@@ -1,0 +1,377 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body{
+    display: flex;
+    justify-content: start;
+} */
+/* .textAnimationContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: rgb(125, 40, 40);
+}
+.textAnimationContainer h2{
+    font-size: 100px;
+    position: absolute;
+    color: rgb(125, 40, 40);
+}
+.textAnimationContainer h2:nth-child(1){
+   color: transparent;
+    -webkit-text-stroke: 2px rgb(246, 126, 6);
+}
+.textAnimationContainer h2:nth-child(2){
+   color: rgb(246, 126, 6) ;
+  animation: animate 1s linear infinite;  
+}
+@keyframes animate{
+    0%{
+        clip-path: polygon(14% 43%, 31% 42%, 45% 44%, 100% 42%, 99% 43%, 66% 45%, 45% 45%, 30% 45%, 13% 45%, 0 48%, 0 45%);
+    }
+    100%{
+        clip-path: polygon(9% 0, 33% 0, 72% 0, 100% 0, 100% 76%, 100% 100%, 58% 100%, 33% 100%, 16% 100%, 1% 100%, 0 0);
+    }
+} 
+ */
+
+/*   animation end  */
+/*  hover effecet start  */
+
+
+.buttonHover {
+    background-color: #9874FF;
+}
+.buttonHover *{
+    background-color: #9874FF;
+}
+.buttonHover{
+
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+.buttonHover:hover{
+    animation: buttoncontainer 1s linear ;
+}
+.buttonHover .topbubble{
+    width: 30px;
+    height: 25px;
+    border-radius: 50%;
+
+    position: absolute;
+    transform: rotate(40deg);
+    opacity: 1;
+
+    z-index: -2; 
+
+}
+.buttonHover:hover .topbubble{
+    animation:hoveranim 1s linear ;
+}
+.topbubbledot1{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+
+    position: absolute;
+
+    z-index: -3;
+}
+.buttonHover:hover .topbubbledot1{
+    animation: topbubbledot1ANIM 1s linear ;
+}
+.topbubbledot2{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -0%;
+    left: -0%;
+    z-index: -4;
+
+}
+.buttonHover:hover .topbubbledot2{
+    animation:  topbubbledot2Anim 1s linear;
+}
+
+
+
+@keyframes hoveranim{
+    0%{ 
+        width: 30px;
+        height: 25px;
+        border-radius: 50%;
+  
+        position: absolute;
+        transform: rotate(40deg);
+        opacity: 1;
+        top: 5%;
+        left: 0%;
+        z-index: -2; 
+          
+    }
+    80%{
+        width: 30px;
+        height: 25px;
+    
+        position: absolute;
+       opacity: 1;
+        top: -20%;
+        left: -10%;
+        
+    }
+    84%{
+        width: 30px;
+        height: 25px;
+
+        position: absolute;
+       opacity: 1;
+        top: -40%;
+        left: -20%;
+        
+    }
+    88%{
+        width: 20px;
+        height: 25px;
+   
+        position: absolute;
+       opacity: 1;
+       top: -40%;
+       left: -20%;
+        
+    }
+    100%{
+        width: 8px;
+        height: 10px;
+
+        position: absolute;
+       opacity: .2;
+       top: -40%;
+        left: -20%;
+    }
+}
+
+/*  container scal */
+@keyframes buttoncontainer{
+    0%{
+        transform: scaleY(1);
+    }
+    80%{
+        transform: scaleY(1.15);
+    }
+    84%{
+        transform: scaleY(0.94);
+    }
+    88%{
+        transform: scaleY(1.05);
+    }
+
+    100%{
+        transform: scaleY(1);
+    }
+}
+
+
+@keyframes topbubbledot1ANIM{
+    0%{
+        top: 10%;
+        left: 5%;
+     }
+     80%{
+        top: -0%;
+        left: -0%;
+     }
+     84%{
+        top: -20%;
+        left: -0%;}
+     88%{
+        top: -20%;
+        left: -4%;}
+    
+     100%{
+        top: -40%;
+        left: -5%;
+     }
+}
+
+@keyframes topbubbledot2Anim{
+    0%{
+        top: 10%;
+        left: 5%;
+     }
+     80%{
+         top: -0%;
+         left: -0%;
+     }
+     84%{
+         top: 20%;
+         left: -0%;}
+     88%{
+         top: 20%;
+         left: -12%;}
+    
+     100%{
+         top: 30%;
+         left: -20%;
+     }
+    }
+
+
+
+
+.buttonHover .topbubble1{
+    width: 30px;
+    height: 25px;
+    border-radius: 50%;
+
+    position: absolute;
+    transform: rotate(40deg);
+    opacity: 1;
+    z-index: -2; 
+}
+.buttonHover:hover .topbubble1{
+    animation:hoveranim1 1s linear;
+}
+.topbubbledot11{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: -0%;
+    right: -0%;
+    z-index: -3;
+
+}
+.buttonHover:hover .topbubbledot11{
+    animation:topbubbledot1ANIM1 1s linear ;
+}
+.topbubbledot21{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: -0%;
+    right: -0%;
+    z-index: -4;
+    
+}
+.buttonHover:hover .topbubbledot21{
+    animation:  topbubbledot2Anim1 1s linear ;
+}
+
+
+@keyframes hoveranim1{
+    0%{ 
+        width: 30px;
+        height: 25px;
+        border-radius: 50%;
+
+        position: absolute;
+        transform: rotate(40deg);
+        opacity: 1;
+        bottom: 5%;
+        right: 0%;
+        z-index: -2; 
+          
+    }
+    80%{
+        width: 30px;
+        height: 25px;
+  
+        position: absolute;
+       opacity: 1;
+        bottom: -20%;
+        right: -10%;
+        
+    }
+    84%{
+        width: 30px;
+        height: 25px;
+   
+        position: absolute;
+       opacity: 1;
+        bottom: -40%;
+        right: -20%;
+        
+    }
+    88%{
+        width: 20px;
+        height: 25px;
+    
+        position: absolute;
+       opacity: 1;
+       bottom: -40%;
+       right: -20%;
+        
+    }
+    100%{
+        width: 8px;
+        height: 10px;
+  
+        position: absolute;
+       opacity: .2;
+       bottom: -40%;
+        right: -20%;
+ 
+    }
+}
+
+
+
+@keyframes topbubbledot1ANIM1{
+0%{
+    bottom: 10%;
+    right: 5%;
+ }
+ 80%{
+    bottom: -0%;
+    right: -0%;
+ }
+ 84%{
+    bottom: -20%;
+    right: -0%;}
+ 88%{
+    bottom: -20%;
+    right: -4%;}
+
+ 100%{
+    bottom: -40%;
+    right: -5%;
+ }
+}
+
+@keyframes topbubbledot2Anim1{
+    0%{
+        bottom: 10%;
+        right: 5%;
+     }
+     80%{
+        bottom: -0%;
+         right: -0%;
+     }
+     84%{
+        bottom: 20%;
+         right: -0%;}
+     88%{
+        bottom: 20%;
+         right: -12%;}
+    
+     100%{
+        bottom: 30%;
+         right: -20%;
+     }
+    }
