@@ -1,175 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>OVERSEER</title>
 
-  <title> Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <!-- <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/customcss.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Presento - v3.10.0
-  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
-
-<body style="background-color: black; color: white;">
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><a href="index.html"><span><i class="bi bi-bootstrap-fill"></i></span></a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">GEMS</a></li>
-          <li><a class="nav-link scrollto" href="#about">WORK</a></li>
-          <li><a class="nav-link scrollto" href="#services">WORKFLOW</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">GEMS</a></li>
-          <li><a class="nav-link scrollto" href="#team">START</a></li>  
+<body>
+<!-- nav section for laptop -->
+<div class="main d-none d-lg-block">
+ <div class="parent">
+ <span class="d-none alog d-lg-block"></span>
+ <nav class="navbar navbar-expand-lg" id="nav">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse justify-content-lg-end">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link " href="#">GEMS -</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">WORK -</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">WORKFLOW -</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">GEMS -</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">START</a>
+          </li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-          <div class="d-flex align-items-center flex-column">
-            <h1 class="text-center">OVERSEER</h1>
-            <p class="text-center">Know everything. Track Everything. Data driven.</p>
-                <!--  hover effect start  -->
-    <div class="buttonHover">
-        
-      <div class=" topbubble"></div>
-      <div class=" topbubbledot1"></div>
-      <div class=" topbubbledot2"></div>
-      <div class=" topbubble1"></div>
-      <div class=" topbubbledot11"></div>
-      <div class=" topbubbledot21"></div>
-  </div>
-          </div>
-
       </div>
     </div>
+  </nav> 
+</div>
+</div>
 
-  </section><!-- End Hero -->
+<!-- nav section for tab & mobile -->
+<div class="d-lg-none mobMenu">
+<div class="toggle" onclick="myFunction(this)">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>  
+<div class="Menu" id="navBar">  
+<div class="menu">
+<a href="#">GEMS</a>  
+<a href="#">WORK</a>  
+<a href="#">WORKFLOW</a>  
+<a href="#">GEMS</a>  
+<a href="#">START</a>  
+</div>
+</div>  
+</div>
 
-  <main id="main">
 
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
-      <div class="container" data-aos="zoom-in">
+<!-- overseer section -->
+<div class="seer container-fluid text-white d-flex flex-column align-items-center">
+  <h1>OVERSEER</h1>
+  <p class="text-center px-2 pb-3">Know everything. Track Everything. Data driven.</p>
+  <div class="buttonHover">    
+    <div class=" topbubble"></div>
+    <div class=" topbubbledot1"></div>
+    <div class=" topbubbledot2"></div>
+    <div class=" topbubble1"></div>
+    <div class=" topbubbledot11"></div>
+    <div class=" topbubbledot21"></div>
+</div>
+</div>
 
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
+<!-- gems1 section -->
+<div class="container-fluid pt-5 text-white" style="background-color: #181A1B;">
+<div class="d-flex justify-content-center pt-5 pb-5"><h2 class="gemsu1 text-center fs-1 fw-bolder pt-3 pb-3 border-bottom border-4 border-white" style="letter-spacing: 8px;width: 160px;">GEMS</h2></div>
+<div class="d-flex flex-column align-items-center flex-md-row justify-content-center gap-5 pt-5 pb-5">
+<div class="d-flex flex-column align-items-center">
+<div>
+  <svg class="gem__icon-leaf" xmlns="http://www.w3.org/2000/svg" width="80" height="54" viewBox="0 0 79.4 53.9">
+    <g fill="none" stroke="white" stroke-width="3" stroke-miterlimit="10">
+      <polyline class="leaf-left" points="40.7,3.5 29.2,14.7 34.2,19.2 24.2,28.9 39.7,42.8"/>
+      <polyline class="leaf-right" points="38.7,43.9 55.2,28.9 45.1,19.2 50.2,14.7 39.7,4.6"/>
+      <line class="stem-right" x1="39.7" y1="32.8" x2="45.2" y2="27.9"/>
+      <line class="stem-left" x1="39.7" y1="32.8" x2="34.1" y2="27.9"/>
+      <line class="stem" x1="39.7" y1="22.8" x2="39.7" y2="50.8"/>
+    </g>
+  </svg>  
+</div>
+<p>Product Design</p>  
+</div>  
+<div>
+<div>
+  <svg class="gem__icon-waves" xmlns="http://www.w3.org/2000/svg" width="80" height="54" viewBox="0 0 79.4 53.9">
+    <g fill="none"  stroke="white" stroke-width="3" stroke-linejoin="bevel" stroke-miterlimit="10">
+      <path class="wave-1" d="M19.2,18.1c8.8,0,10.2-7.8,10.2-7.8c0,0,1.4,7.8,10.2,7.8s10.2-7.8,10.2-7.8s1.4,7.8,10.2,7.8"/>
+      <path class="wave-2" d="M19.2,31.1c8.8,0,10.2-7.8,10.2-7.8c0,0,1.4,7.8,10.2,7.8s10.2-7.8,10.2-7.8s1.4,7.8,10.2,7.8"/>
+      <path class="wave-3" d="M19.2,44.1c8.8,0,10.2-7.8,10.2-7.8c0,0,1.4,7.8,10.2,7.8s10.2-7.8,10.2-7.8s1.4,7.8,10.2,7.8"/>
+    </g>
+  </svg>
+</div>
+<p>UX Design</p>  
+</div>  
+<div>
+<div>
+  <svg class="gem__icon-wind" xmlns="http://www.w3.org/2000/svg" width="80" height="54" viewBox="0 0 79.4 53.9">
+    <g fill="none" stroke="white" stroke-width="3" stroke-miterlimit="10">
+      <path class="wind-1" d="M57.6,24.3c-0.6-1.2-1-2.6-1-4.1c0-5,4-9,9-9c5,0,9,4,9,9s-4,9-9,9l-61.1,0"/>
+      <path class="wind-2" d="M42.2,17.4c0-2.7,2.2-4.9,4.9-4.9c2.7,0,4.9,2.2,4.9,4.9s-2.2,4.9-4.9,4.9H9.6"/>
+      <path class="wind-3" d="M57.9,41.3c0.6,1.2,1.7,2,3.1,2c1.9,0,3.5-1.6,3.5-3.5s-1.6-3.5-3.5-3.5l-46.4,0"/>
+    </g>
+  </svg>
+</div>
+<p>Prototyping</p>  
+</div>  
+<div>
+<div>
+  <svg class="gem__icon-mountain" xmlns="http://www.w3.org/2000/svg" width="80" height="54" viewBox="0 0 79.4 53.9">
+    <g fill="none" stroke="white" stroke-width="3" stroke-miterlimit="10">
+      <polygon class="mountain-small" points="32.3,46.5 4.7,46.5 18.5,28.1 32.3,46.5	"/>
+      <polygon class="mountain-big" fill="#181A1B" points="17,46.5 45.8,7.8 74.7,46.5 17,46.5"/>
+      <polyline class="mountain-snow" points="36.7,21.8  40.8,26 45.9,20.9 54.2,29.1 59,24.3 "/>
+    </g>
+  </svg>
+</div>
+<p>Development</p>  
+</div>  
+<div>
+<div>
+  <svg class="gem__icon-fether" xmlns="http://www.w3.org/2000/svg" width="80" height="54" viewBox="0 0 79.4 53.9">
+    <g fill="none" stroke="white" stroke-width="3" stroke-miterlimit="10">
+      <path class="outline-left" d="M39.6,42.3L39.6,42.3c-4.4,0-8.1-3.6-8.1-8.1V13.5c0-4.4,8.1-9.4,8.1-9.4"/>
+      <path class="outline-right" d="M39.6,42.3c4.4,0,8.1-3.6,8.1-8.1V13.5c0-4.4-8.1-9.4-8.1-9.4H39l-0.7-0.9"/>
+      <line class="root" x1="39.6" y1="9.7" x2="39.6" y2="50.3"/>
+      <line class="stroke-right-1" x1="39.7" y1="34.3" x2="47.8" y2="26.2"/>
+      <line class="stroke-right-2" x1="39.7" y1="24.5" x2="47.8" y2="16.4"/>
+      <line class="stroke-left-1" x1="39.6" y1="34.3" x2="31.5" y2="26.2"/>
+      <line class="stroke-left-2" x1="39.6" y1="24.5" x2="31.5" y2="16.4"/>
+    </g>
+  </svg>
+</div>
+<p>Team Lead</p>  
+</div>  
+</div>
+
+<div class="d-flex flex-column flex-lg-row mx-3 mt-3 mx-lg-3 px-lg-0 mx-xl-5 px-xl-5 gap-4">
+<div>
+  <h3 class="lh-base text-xl-end fs-4">Hello, I’m Roland, Creative Technologist & User Experience Engineer based in Berlin – I create digital products with knowledge and passion.</h3>
+</div>
+<div class="d-flex flex-column flex-md-row gap-3 gap-lg-4">  
+<div>
+  <p class="lh-lg">With more than a decade of experience I tackle a broad variety of disciplines in the process of creating meaningful products that make a real difference. With carefully selected tools and skills I express my visions ranging from product design to the creation of user experience up to development and delivery.</p>
+  <p class="lh-lg">My distinctive strategic thinking helps me to pinpoint the holistic scope of a product and evolve it by adding new business ideas, innovations and values that meet user needs as well as business objectives. Besides building user flows, information architecture and wireframes, tailor-made interactive prototypes are constantly</p>
+</div>  
+<div>
+  <p class="lh-lg">putting concepts and ideas to the test and emphasize the user-centered approach in my work. I work with the latest techniques in web development and my agile workflow is the result of the precisely combined tools and strategies that include object oriented patterns, build scripts, pre-processors and minification, source code management, testing as well as deployment.</p>
+  <p class="lh-lg">With my knowledge in both design and technology I foster productive teams in an collaborative environment that meets the requirements of creatives and developers at the same time.</p>
+</div>
+</div>  
+</div>
+
+<div class="d-flex justify-content-center pt-5"><h2 class="gemsu1 text-center fs-1 fw-bolder pt-3 pb-5 border-bottom border-4 border-white" style="letter-spacing: 8px;position: relative;width: 160px;">WORK</h2></div>
+</div>
+
+
+<!-- work section -->
+<section id="about" class="about section-bg">
+      <div class="container" >
+
+       
 
       </div>
-    </section><!-- End Clients Section -->
+    </section>
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row no-gutters">
-          <div class="content col-xl-5 d-flex align-items-stretch">
-            <div class="content">
-              <h3>Voluptatem dignissimos provident quasi</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
-              <a href="#" class="about-btn"><span>About us</span> <i class="bx bx-chevron-right"></i></a>
-            </div>
-          </div>
-          <div class="col-xl-7 d-flex align-items-stretch">
-            <div class="icon-boxes d-flex flex-column justify-content-center">
-              <div class="row">
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bx bx-receipt"></i>
-                  <h4>Corporis voluptates sit</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                  <i class="bx bx-cube-alt"></i>
-                  <h4>Ullamco laboris nisi</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bx bx-images"></i>
-                  <h4>Labore consequatur</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-                  <i class="bx bx-shield"></i>
-                  <h4>Beatae veritatis</h4>
-                  <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-                </div>
-              </div>
-            </div><!-- End .content-->
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    
-  </main><!-- End #main -->
-
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+ 
+<script src="script.js"></script>
+   
 </body>
-
 </html>

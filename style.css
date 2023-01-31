@@ -1,47 +1,78 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial;
+body{font-family: 'Inter';overflow-x: hidden;background-color: #181A1B;}
+/* nav section for tab & mobile */
+.mobMenu{
+ background-color: #181A1B;
+ /* padding: 15px 0 0 20px; */
+ height: 60px;
 }
-body{
-    display: flex;
-    justify-content: start;
-} */
-/* .textAnimationContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    background: rgb(125, 40, 40);
-}
-.textAnimationContainer h2{
-    font-size: 100px;
-    position: absolute;
-    color: rgb(125, 40, 40);
-}
-.textAnimationContainer h2:nth-child(1){
-   color: transparent;
-    -webkit-text-stroke: 2px rgb(246, 126, 6);
-}
-.textAnimationContainer h2:nth-child(2){
-   color: rgb(246, 126, 6) ;
-  animation: animate 1s linear infinite;  
-}
-@keyframes animate{
-    0%{
-        clip-path: polygon(14% 43%, 31% 42%, 45% 44%, 100% 42%, 99% 43%, 66% 45%, 45% 45%, 30% 45%, 13% 45%, 0 48%, 0 45%);
-    }
-    100%{
-        clip-path: polygon(9% 0, 33% 0, 72% 0, 100% 0, 100% 76%, 100% 100%, 58% 100%, 33% 100%, 16% 100%, 1% 100%, 0 0);
-    }
-} 
- */
 
-/*   animation end  */
-/*  hover effecet start  */
+.toggle {
+display: inline-block;
+position: absolute;
+top: 15px;
+left: 20px;
+z-index: 20;
+cursor: pointer;
+user-select: none;
+}
 
+.bar1, .bar2, .bar3 {
+width: 30px;
+height: 3px;
+background-color: rgb(152, 180, 177);
+margin: 6px 0;
+transition: 0.4s;
+}
+
+.change .bar1 {
+transform: translate(0, 9px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+transform: translate(0, -9px) rotate(45deg);
+}
+
+.Menu{
+ background-color: rgb(248, 248, 248);
+ display: flex;
+ height: 100%;
+ width: 0%;
+ position: fixed;
+ z-index: 10;
+ top: 0;
+ right: 0;
+ overflow-x: hidden;
+ transition: 0.5s;
+}
+.menu{
+ position: relative;
+ height: 100%;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 10px;
+}
+.menu a{
+ text-decoration: none;
+ color: black;
+ font-size: 14px;
+}
+
+.menu a:hover{color: rgb(12, 187, 164);transition: .1s;}
+
+.menuChange{width: 100%;}
+
+/* overseer section */
+.seer{
+    background-color: #181A1B;
+    padding: 150px 0 30px;
+}
+
+/* button hover design */
 
 .buttonHover {
     background-color: #9874FF;
@@ -375,3 +406,57 @@ body{
          right: -20%;
      }
     }
+
+
+/* work section */
+.section-bg {
+    position: relative;
+    padding: 120px 0;
+    color: #fff;
+  }
+  
+  .section-bg:before {
+    content: "";
+    background: #2a2929;
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    left: 0;
+    right: 0;
+    transform: skewY(-3deg);
+  }
+
+    
+
+  .about .container {
+    position: relative;
+    z-index: 10;
+  }
+
+
+  /* @media (max-width: 1200px) {
+    .about .content {
+      padding-right: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      text-align: center;
+    }
+  } */
+    
+
+
+@media(min-width:992px){
+/* nav section for laptop  */
+.main{background-color: #181A1B; position: relative;width: 100%;height: 56px;}
+.alog{border: 2px solid rgb(152, 180, 177); position: fixed; top: 20px;left: 20px;z-index: 1;width: 20px; height: 20px;cursor: pointer;}
+#nav{ background-color: rgb(248, 248, 248); position: fixed;top: -20px;left: 0;width: 100%;height: 0;overflow-y: hidden;}
+#nav a{color: black;}
+#nav a:hover{color: rgb(12, 187, 164);transition: .1s;}
+.parent:hover #nav{transition: .5s;height: 56px;top: 0;}
+}
+
+
+
