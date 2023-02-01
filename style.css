@@ -1,4 +1,14 @@
-body{font-family: 'Inter';overflow-x: hidden;background-color: #181A1B;}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   
+    font-family: 'Inter';
+    overflow-x: clip;
+    background-color: #181A1B;}
 /* nav section for tab & mobile */
 .mobMenu{
  background-color: #181A1B;
