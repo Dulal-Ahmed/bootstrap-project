@@ -5,9 +5,8 @@
 }
 
 body{
-   
+   overflow-x: clip;
     font-family: 'Inter';
-    overflow-x: clip;
     background-color: #181A1B;}
 /* nav section for tab & mobile */
 .mobMenu{
@@ -415,6 +414,8 @@ transform: translate(0, -9px) rotate(45deg);
      }
     }
 
+    .fixing{margin-top: 130px;}
+
 
 /* work section */
 .section-bg {
@@ -442,6 +443,8 @@ transform: translate(0, -9px) rotate(45deg);
   .pointer-select{cursor: pointer;}
   .pointer-select:hover h4{transform: translateY(5px);transition: .1s;}
   .pointer-select:hover p{visibility: hidden;}
+  .fixing2{margin-top: 130px;}
+  .fixing3{padding: 80px 0 150px;}
 
   /* workflow section */
   .arrow{
@@ -547,9 +550,20 @@ transform: translate(0, -9px) rotate(45deg);
 @media(max-width:768px){
     .headeranimation{font-size: 50px;}
     .textAnimationContainer h2{font-size: 40px;}
+    .fixing2{margin-top: 0px;}
+    .fixing3{padding: 80px 0 50px;}
+}
+
+@media(max-width:500px){
+    .seer{
+        padding: 100px 0 30px;
+    }
+    .fixing{margin-top: 10px;}
+    .fixing3{padding: 80px 0 30px;}
 }
 
 @media(max-width:425px){
     .headeranimation{font-size: 40px;}
-    .textAnimationContainer h2{font-size: 34px;}
+    .textAnimationContainer h2{font-size: 34px;letter-spacing: 5px;}
+    .verImg{width: 100%;}
 }
