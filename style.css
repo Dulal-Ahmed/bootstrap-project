@@ -64,8 +64,6 @@ transform: translate(0, -9px) rotate(45deg);
 
 .menu a:hover{color: rgb(12, 187, 164);transition: .1s;}
 
-.menuChange{width: 100%;}
-
 /* overseer section */
 .seer{
     background-color: #181A1B;
@@ -462,26 +460,18 @@ transform: translate(0, -9px) rotate(45deg);
     }
   }
 
-  @media (max-width: 767px) {
+  @media (min-width: 792px) {
     /* workflow section  */
-    .svgImg {
-      width: 280px;
+    .svgImg2 {
+      width: 800px;
       height: auto;
     }
-    .svgImg img{
+    .svgImg2 img{
         width: 100%;
         height: 100%;
     }
   }
 
-  @media (max-width: 425px) {
-    /* workflow section  */
-    .svgImg {
-      width: 180px;
-      height: 600px;
-    }
-   
-  }
     
 
 

@@ -2,7 +2,15 @@
 const mobileMenu = document.querySelector('.Menu');
 function myFunction(x) {
   x.classList.toggle("change");
-  mobileMenu.classList.toggle("menuChange");
+  if(mobileMenu.style.width === "100%"){
+    mobileMenu.style.width = "0%";
+  }else{
+    mobileMenu.style.width = "100%"
+  }
+}
+
+function myHidden() {
+  mobileMenu.style.width = "0%";
 }
 
 // text animation
