@@ -1,5 +1,6 @@
 // mobileMenu
 const mobileMenu = document.querySelector('.Menu');
+const removeClass = document.querySelector('.toggle');
 function myFunction(x) {
   x.classList.toggle("change");
   if(mobileMenu.style.width === "100%"){
@@ -11,6 +12,7 @@ function myFunction(x) {
 
 function myHidden() {
   mobileMenu.style.width = "0%";
+  removeClass.classList.remove('change');
 }
 
 // text animation
