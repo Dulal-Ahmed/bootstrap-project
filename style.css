@@ -81,6 +81,7 @@ transform: translate(0, -9px) rotate(45deg);
  gap: 10px;
 }
 .menu a{
+ font-family: 'OakBold';   
  text-decoration: none;
  color: black;
  font-size: 14px;
@@ -574,7 +575,7 @@ transform: translate(0, -9px) rotate(45deg);
     transition: 0.4s;
     }
 #nav{ background-color: rgb(248, 248, 248); position: fixed;top: -20px;left: 0;width: 100%;height: 0;overflow-y: hidden;z-index: 16;}
-#nav a{color: black;}
+#nav a{color: black;font-family: 'OakBold';font-size: 14px;}
 #nav a:hover:not(.active-col){color: #87C6BD;transition: .1s;}
 .parent:hover #nav{transition: .5s;height: 56px;top: 0;}
 }
