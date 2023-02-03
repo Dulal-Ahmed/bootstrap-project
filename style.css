@@ -609,12 +609,12 @@ transform: translate(0, -9px) rotate(45deg);
 .textAnimationContainer h2:nth-child(2){
     font-weight: bolder;
     transition: clip-path 1s ;
-    clip-path: polygon(59% 62%, 98% 95%, 62% 59%, 99% 49%, 59% 57%, 97% 1%, 54% 56%, 1% 23%, 54% 61%, 2% 98%);
+    clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 1%, 0% 0%, 1% 0%, 0% 1%, 2% 0%);
 }
 
 .svgAnimationContainer{
     transition: clip-path 1s ;
-    clip-path: polygon(59% 62%, 98% 95%, 62% 59%, 99% 49%, 59% 57%, 97% 1%, 54% 56%, 1% 23%, 54% 61%, 2% 98%);
+    clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 1%, 0% 0%, 1% 0%, 0% 1%, 2% 0%);
 }
 /* 
 /*  End Text Animation */
