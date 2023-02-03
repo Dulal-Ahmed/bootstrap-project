@@ -20,9 +20,12 @@
     src: url('./font/plantin-light.ttf');
   }
 
+  
+
 body{
    overflow-x: clip;
     background-color: #181A1B;}
+    
 /* nav section for tab & mobile */
 .mobMenu{
  background-color: #181A1B;
@@ -92,12 +95,13 @@ transform: translate(0, -9px) rotate(45deg);
 /* overseer section */
 .seer{
     background-color: #181A1B;
-    padding: 180px 0 120px;
+    padding: 200px 0 120px;
 }
 
 .seer h1{
     font-family: 'OakLight';
     font-weight: bolder;
+    letter-spacing: 10px;
 }
 
 .seer p{
@@ -138,6 +142,11 @@ transform: translate(0, -9px) rotate(45deg);
 }
 
 /* button hover design */
+.parentBtn{
+    width: 130px;
+    height: 40px;
+}
+
 
 .buttonHover {
     background-color: #9874FF;
@@ -161,12 +170,17 @@ transform: translate(0, -9px) rotate(45deg);
 }
 .buttonHover .text-btn{
     position: absolute;
-    top: 7px;
+    top: 0;
     font-family: 'OakBold', sans-serif;
     font-weight: normal;
     letter-spacing: 1px;
     color: whitesmoke;
     font-size: 16px;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .buttonHover .topbubble{
     width: 30px;
@@ -213,11 +227,12 @@ transform: translate(0, -9px) rotate(45deg);
 
 
 @keyframes hoveranim{
+
     0%{ 
         width: 30px;
         height: 25px;
         border-radius: 50%;
-  
+        background-color: #1eaa95;
         position: absolute;
         transform: rotate(40deg);
         opacity: 1;
@@ -225,6 +240,15 @@ transform: translate(0, -9px) rotate(45deg);
         left: 0%;
         z-index: -2; 
           
+    }
+    25%{
+        background-color: #09be09;
+     }
+     50%{
+        background-color: #b938ec;
+    }
+   75%{
+        background-color: #b47d35;
     }
     80%{
         width: 30px;
@@ -259,7 +283,7 @@ transform: translate(0, -9px) rotate(45deg);
     100%{
         width: 8px;
         height: 10px;
-
+        background-color: #1eaa95;
         position: absolute;
        opacity: .2;
        top: -40%;
@@ -273,13 +297,13 @@ transform: translate(0, -9px) rotate(45deg);
         transform: scaleY(1);
     }
     80%{
-        transform: scaleY(1.15);
+        transform: scaleY(1);
     }
     84%{
-        transform: scaleY(0.94);
+        transform: scaleY(1);
     }
     88%{
-        transform: scaleY(1.05);
+        transform: scaleY(1);
     }
 
     100%{
@@ -289,24 +313,41 @@ transform: translate(0, -9px) rotate(45deg);
 
 
 @keyframes topbubbledot1ANIM{
+
     0%{
         top: 10%;
         left: 5%;
+        background-color: #1eaa95;
      }
+     25%{
+        background-color: #09be09;
+     }
+     50%{
+        background-color: #b938ec;
+    }
+   75%{
+        background-color: #b47d35;
+    }
      80%{
         top: -0%;
         left: -0%;
+        background-color: #09be09;
      }
      84%{
         top: -20%;
-        left: -0%;}
+        left: -0%;
+        background-color: #b938ec;
+    }
      88%{
         top: -20%;
-        left: -4%;}
+        left: -4%;
+        background-color: #b47d35;
+    }
     
      100%{
         top: -40%;
         left: -5%;
+        background-color: #1eaa95;
      }
 }
 
@@ -314,7 +355,17 @@ transform: translate(0, -9px) rotate(45deg);
     0%{
         top: 10%;
         left: 5%;
-     }
+        background-color: #1eaa95;
+    }
+    25%{
+       background-color: #09be09;
+    }
+    50%{
+       background-color: #b938ec;
+   }
+  75%{
+       background-color: #b47d35;
+   }
      80%{
          top: -0%;
          left: -0%;
@@ -329,6 +380,7 @@ transform: translate(0, -9px) rotate(45deg);
      100%{
          top: 30%;
          left: -20%;
+         background-color: #1eaa95;
      }
     }
 
@@ -379,11 +431,12 @@ transform: translate(0, -9px) rotate(45deg);
 
 
 @keyframes hoveranim1{
+ 
     0%{ 
         width: 30px;
         height: 25px;
         border-radius: 50%;
-
+        background-color: #1eaa95;
         position: absolute;
         transform: rotate(40deg);
         opacity: 1;
@@ -391,6 +444,15 @@ transform: translate(0, -9px) rotate(45deg);
         right: 0%;
         z-index: -2; 
           
+    }
+    25%{
+        background-color: #09be09;
+     }
+     50%{
+        background-color: #b938ec;
+    }
+   75%{
+        background-color: #b47d35;
     }
     80%{
         width: 30px;
@@ -425,7 +487,7 @@ transform: translate(0, -9px) rotate(45deg);
     100%{
         width: 8px;
         height: 10px;
-  
+        background-color: #1eaa95;
         position: absolute;
        opacity: .2;
        bottom: -40%;
@@ -440,7 +502,17 @@ transform: translate(0, -9px) rotate(45deg);
 0%{
     bottom: 10%;
     right: 5%;
- }
+    background-color: #1eaa95;
+}
+25%{
+   background-color: #09be09;
+}
+50%{
+   background-color: #b938ec;
+}
+75%{
+   background-color: #b47d35;
+}
  80%{
     bottom: -0%;
     right: -0%;
@@ -455,6 +527,7 @@ transform: translate(0, -9px) rotate(45deg);
  100%{
     bottom: -40%;
     right: -5%;
+    background-color: #1eaa95;
  }
 }
 
@@ -462,7 +535,17 @@ transform: translate(0, -9px) rotate(45deg);
     0%{
         bottom: 10%;
         right: 5%;
-     }
+        background-color: #1eaa95;
+    }
+    25%{
+       background-color: #09be09;
+    }
+    50%{
+       background-color: #b938ec;
+    }
+    75%{
+       background-color: #b47d35;
+    }
      80%{
         bottom: -0%;
          right: -0%;
@@ -477,6 +560,7 @@ transform: translate(0, -9px) rotate(45deg);
      100%{
         bottom: 30%;
          right: -20%;
+         background-color: #1eaa95;
      }
     }
 
@@ -624,7 +708,7 @@ transform: translate(0, -9px) rotate(45deg);
     left: 0;
 } */
 .headeranimation{
-    font-size: 80px;
+    font-size: 100px;
     animation: anim3 1s linear;
 }
 
@@ -657,4 +741,28 @@ transform: translate(0, -9px) rotate(45deg);
     .headeranimation{font-size: 40px;}
     .textAnimationContainer h2{font-size: 34px;letter-spacing: 5px;}
     .verImg{width: 100%;}
+}
+
+
+.parentBtn:hover p{
+    animation: amim3 1s linear infinite;
+}
+@keyframes amim3{
+    0%{
+       background-color: #1eaa95;
+     }
+     25%{
+        background-color: #09be09;
+     }
+     50%{
+        background-color: #b938ec;
+    }
+   75%{
+        background-color: #b47d35;
+    }
+    
+     100%{
+        background-color: #1eaa95;
+     }
+
 }
